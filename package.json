@@ -1,0 +1,27 @@
+{
+  "name": "octave-real-estate",
+  "version": "0.1.0",
+  "description": "Website for Octave Living Real Estate",
+  "main": "index.js",
+  "private": "true",
+  "dependencies": {
+    "metalsmith": "^2.2.0",
+    "metalsmith-markdown": "^0.2.1"
+  },
+  "devDependencies": {
+    "handlebars": "^4.0.5",
+    "metalsmith-layouts": "^1.6.5",
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timsvoice/octave-real-estate.git"
+  },
+  "author": "Timothy Voice",
+  "bugs": {
+    "url": "https://github.com/timsvoice/octave-real-estate/issues"
+  },
+  "homepage": "https://github.com/timsvoice/octave-real-estate#readme"
+}

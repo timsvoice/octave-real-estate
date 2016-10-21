@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{title}}</title>
+</head>
+  <body>
+    {{#each offerings}}
+      <div class="offering-container">
+        <div class="offering-background">{{image}}</div>
+        <div class="offering-description">
+          <div class="offering-title">{{title}}</div>
+          <div class="offering-body">{{{contents}}}</div>
+          <div class="offering-button">{{button-text}}</div>
+        </div>
+      </div>
+    {{/each}}
+    </body>
+</html>
