@@ -492,7 +492,7 @@ button {
   padding: 0.85em 1em;
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
-  background-color: purple;
+  background-color: #2199e8;
   color: #fefefe;
 }
 
@@ -501,7 +501,7 @@ button {
 }
 
 .button:hover, .button:focus {
-  background-color: #6d006d;
+  background-color: #1583cc;
   color: #fefefe;
 }
 
