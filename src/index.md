@@ -1,5 +1,5 @@
 ---
-title: home
+title: home -
 layout: home.html
 offerings:
   sangha-homes:
@@ -18,3 +18,12 @@ offerings:
     body: Look at all the great sites!
     image: image.png
 ---
+
+# This is a title
+
+
+<div class="button-group">
+  <a class="button">One</a>
+  <a class="button">Two</a>
+  <a class="button">Three</a>
+</div>
