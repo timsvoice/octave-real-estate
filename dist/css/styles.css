@@ -36,11 +36,8 @@ video#bgvid {
 
 .offering-container.homes {
   display: flex;
-  flex-direction: row;
-  height: 28rem;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  padding-left: 12rem;
+  position: relative;
+  flex-direction: column;
   color: #fefefe;
   background: url("http://d1aptev9i6q1tg.cloudfront.net/media/pictures/service-apartment-11.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -49,13 +46,30 @@ video#bgvid {
   background-size: cover;
 }
 
+@media screen and (min-width: 64em) {
+  .offering-container.homes {
+    flex-direction: row;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 12rem;
+    height: 28rem;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .offering-container.homes {
+    flex-direction: row;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 6rem;
+    height: 24rem;
+  }
+}
+
 .offering-container.services {
   display: flex;
-  flex-direction: row;
-  height: 28rem;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  padding-left: 12rem;
+  position: relative;
+  flex-direction: column;
   color: #fefefe;
   background: url("http://d1aptev9i6q1tg.cloudfront.net/media/pictures/alvero-hands.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -64,13 +78,30 @@ video#bgvid {
   background-size: cover;
 }
 
+@media screen and (min-width: 64em) {
+  .offering-container.services {
+    flex-direction: row;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 12rem;
+    height: 28rem;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .offering-container.services {
+    flex-direction: row;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 6rem;
+    height: 24rem;
+  }
+}
+
 .offering-container.explore {
   display: flex;
-  flex-direction: row;
-  height: 28rem;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  padding-left: 12rem;
+  position: relative;
+  flex-direction: column;
   color: #fefefe;
   background: url("http://d1aptev9i6q1tg.cloudfront.net/media/pictures/overall.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -79,19 +110,68 @@ video#bgvid {
   background-size: cover;
 }
 
+@media screen and (min-width: 64em) {
+  .offering-container.explore {
+    flex-direction: row;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 12rem;
+    height: 28rem;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .offering-container.explore {
+    flex-direction: row;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 6rem;
+    height: 24rem;
+  }
+}
+
 .offering-band {
   height: 14rem;
   background-color: #fefefe;
 }
 
+.offering-overlay {
+  display: flex;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .offering-description {
-  flex-basis: 66.66%;
-  padding: 0 10rem 0 0;
+  padding: 2rem 3rem;
+  z-index: 1;
+}
+
+@media screen and (min-width: 40em) {
+  .offering-description {
+    padding: 0 2rem 0 0;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .offering-description {
+    flex-basis: 66.66%;
+    padding: 0 10rem 0 0;
+  }
 }
 
 .offering-cta {
-  flex-basis: 33.33%;
-  align-self: flex-end;
+  padding: 1rem 3rem;
+  z-index: 1;
+}
+
+@media screen and (min-width: 40em) {
+  .offering-cta {
+    align-self: flex-end;
+  }
 }
 
 .offering-cta .button {
@@ -100,6 +180,16 @@ video#bgvid {
 
 .offering-cta .button:hover {
   color: #fefefe;
+}
+
+.landing-container {
+  display: flex;
+  height: 100vh;
+  background: url("http://d1aptev9i6q1tg.cloudfront.net/media/pictures/misty-mountain.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */

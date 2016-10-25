@@ -1,10 +1,23 @@
 @mixin offering-container($image) {
   display: flex;
-  flex-direction: row;
-  height: 28rem;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  padding-left: 12rem;
+  position: relative;
+  @include breakpoint(small) {
+    flex-direction: column;
+  };
+  @include breakpoint(large) {
+    flex-direction: row;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 12rem;
+    height: 28rem;
+  };
+  @include breakpoint(medium) {
+    flex-direction: row;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 6rem;
+    height: 24rem;
+  };
   color: $white;
   background: url($image) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -37,13 +50,33 @@
 }
 
 .offering {
+  &-overlay {
+    display: flex;
+    position: absolute;
+    background: rgba(0,0,0,0.20);
+    left: 0; top: 0; right: 0; bottom: 0;
+  }
   &-description {
-    flex-basis: 66.66%;
-    padding: 0 10rem 0 0;
+    @include breakpoint(small) {
+      padding: 2rem 3rem;
+    };
+    @include breakpoint(medium) {
+      padding: 0 2rem 0 0;
+    };
+    @include breakpoint(large) {
+      flex-basis: 66.66%;
+      padding: 0 10rem 0 0;
+    };
+    z-index: 1;
   }
   &-cta {
-    flex-basis: 33.33%;
-    align-self: flex-end;
+    @include breakpoint(small) {
+      padding: 1rem 3rem;
+    };
+    @include breakpoint(medium) {
+      align-self: flex-end;
+    };
+    z-index: 1;
     .button {
       font-weight: 600;
       &:hover {
