@@ -15,19 +15,19 @@
 
 .offering-container.homes {
   @include offering-container(
-    '../media/pictures/service-apartment-11.jpg'
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/service-apartment-11.jpg'
   );
 }
 
 .offering-container.services {
   @include offering-container(
-    '../media/pictures/alvero-hands.jpg'
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/alvero-hands.jpg'
   );
 }
 
 .offering-container.explore {
   @include offering-container(
-    '../media/pictures/overall.jpg'
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/overall.jpg'
   );
 }
 
