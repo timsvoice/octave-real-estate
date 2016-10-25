@@ -16,8 +16,9 @@ Metalsmith(__dirname)
     watch({
       paths: {
         "${source}/**/*": true,
-        "./layouts/**/*": true,
-        "./partials/**/*": true,
+        "${source}/styles/*": "**/*",
+        "./layouts/**/*": "**/*",
+        "./partials/**/*": "**/*",
       },
       livereload: true,
     })

@@ -1,0 +1,54 @@
+@mixin offering-container($image) {
+  display: flex;
+  flex-direction: row;
+  height: 28rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  padding-left: 12rem;
+  color: $white;
+  background: url($image) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.offering-container.homes {
+  @include offering-container(
+    '../media/pictures/service-apartment-11.jpg'
+  );
+}
+
+.offering-container.services {
+  @include offering-container(
+    '../media/pictures/alvero-hands.jpg'
+  );
+}
+
+.offering-container.explore {
+  @include offering-container(
+    '../media/pictures/overall.jpg'
+  );
+}
+
+.offering-band {
+  height: 14rem;
+  background-color: $white;
+}
+
+.offering {
+  &-description {
+    flex-basis: 66.66%;
+    padding: 0 10rem 0 0;
+  }
+  &-cta {
+    flex-basis: 33.33%;
+    align-self: flex-end;
+    .button {
+      font-weight: 600;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
