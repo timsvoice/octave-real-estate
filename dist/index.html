@@ -5,22 +5,21 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sangha</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text">Sangha Real Estate</li>
-          <li><a href="landing.html">Landing</a></li>
-        </ul>
+    <div class="navigation">
+      <div class="navigation-title">
+        <a href="/landing.html">
+          <img src="../media/pictures/Sangha-Logo.png" alt="Sangha">
+        </a>
       </div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li><input type="search" placeholder="Search"></li>
-          <li><button type="button" class="button">Search</button></li>
-        </ul>
+      <div>
+        <div class="navigation-right">
+          <a id="trigger-overlay" type="button">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
     </div>
     
@@ -28,9 +27,14 @@
     <source src="http://d1aptev9i6q1tg.cloudfront.net/media/videos/sky-high.mp4" type="video/mp4">
 </video>
 
+
     <script>
       $(document).foundation();
     </script>
+    <script type="text/javascript" src="./js/modernizr.js"></script>
+    <script type="text/javascript" src="./js/classie.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script></script>
+    <script src="https://use.fontawesome.com/02ebdbeb2a.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
   </body>
 </html>

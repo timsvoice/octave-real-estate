@@ -44,17 +44,15 @@
   );
 }
 
-.offering-band {
-  height: 14rem;
-  background-color: $white;
-}
-
 .offering {
   &-overlay {
     display: flex;
     position: absolute;
     background: rgba(0,0,0,0.20);
     left: 0; top: 0; right: 0; bottom: 0;
+  }
+  &-body {
+    margin: 2rem 0rem 0rem;
   }
   &-description {
     @include breakpoint(small) {
@@ -68,6 +66,7 @@
       padding: 0 10rem 0 0;
     };
     z-index: 1;
+    align-self: center;
   }
   &-cta {
     @include breakpoint(small) {
@@ -75,6 +74,7 @@
     };
     @include breakpoint(medium) {
       align-self: flex-end;
+      padding: 2rem 3rem;
     };
     z-index: 1;
     .button {
@@ -82,6 +82,48 @@
       &:hover {
         color: $white;
       }
+    }
+  }
+}
+
+.offering-band {
+  display: flex;
+  @include breakpoint(large) {
+    padding: 5rem 15rem 5rem;
+  };
+  @include breakpoint(small) {
+    padding: 2rem;
+  };
+  background-color: $white;
+  &-intro {
+    display: flex;
+    @include breakpoint(small) {
+      flex-direction: column;
+    };
+    @include breakpoint(medium) {
+      flex-direction: row;
+    };
+    &-title {
+      color: $gold;
+      flex-basis: 25%;
+    }
+    &-body {
+      color: $primary-color;
+      flex-basis: 75%;
+    }
+  }
+  &-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    &-attribution {
+      color: $gold;
+    }
+    &-body {
+      color: $primary-color;
     }
   }
 }

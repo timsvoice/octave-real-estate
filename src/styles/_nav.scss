@@ -1,0 +1,141 @@
+.navigation {
+	@extend .top-bar;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	&-title {
+		@extend .top-bar-title;
+		img {
+			height: 3rem;
+		}
+	}
+	&-right {
+		@extend .top-bar-right;
+		i {
+			color: $primary-color;
+			font-size: 2rem;
+		}
+	}
+}
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: transparentize($primary-color, 0.075);
+	z-index: 100;
+}
+
+.overlay-title {
+	@extend .navigation-title;
+	padding: 1.25rem;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	font-size: 2.5rem;
+	font-weight: 300;
+	position: absolute;
+	right: 1.25rem;
+	top: 1.25rem;
+	overflow: hidden;
+	border: none;
+	color: $white;
+	outline: none;
+	z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 40%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 4);
+	min-height: 54px;
+	@extend h2;
+	h1 {
+		color: $white;
+		text-transform: uppercase;
+	}
+}
+
+.overlay ul li a {
+	// font-weight: 300;
+	display: block;
+	color: $medium-gray;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: $white;
+}
+
+/* Effects */
+.overlay-menu {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-menu.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-menu nav {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-menu nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%);
+	transform: translateY(-25%);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-menu.open nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-menu.close nav ul {
+	-webkit-transform: translateY(25%);
+	transform: translateY(25%);
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}

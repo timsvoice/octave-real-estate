@@ -1,4 +1,25 @@
-<div class="offering-band"></div>
+<div class="offering-band">
+  {{#if intro}}
+    <div class="offering-band-intro">
+      <h2 class="offering-band-intro-title cn">
+        {{intro.title}}
+      </h2>
+      <p class="offering-band-intro-body cn">
+        {{intro.body}}
+      </p>
+    </div>
+  {{/if}}
+  {{#if quote}}
+  <div class="offering-band-quote">
+    <h5 class="offering-band-quote-body cn">
+      {{quote.body}}
+    </h5>
+    <h5 class="offering-band-quote-attribution cn">
+      {{quote.attribution}}
+    </h5>
+  </div>
+{{/if}}
+</div>
   <div class="offering-container {{slug}}">
     <div class="offering-description">
       <h1 class="offering-title">{{title}}</h1>

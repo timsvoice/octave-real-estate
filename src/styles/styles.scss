@@ -1,8 +1,11 @@
 @import 'settings';
 @import 'foundation';
+
 @import 'global';
 @import 'media';
 @import 'offering';
 @import 'landing';
+@import 'nav';
+@import 'footer';
 
 @include foundation-everything($flex: true);

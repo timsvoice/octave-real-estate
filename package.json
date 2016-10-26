@@ -4,7 +4,10 @@
   "description": "Website for Octave Living Real Estate",
   "main": "index.js",
   "private": "true",
-  "dependencies": {},
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "font-awesome": "^4.7.0"
+  },
   "devDependencies": {
     "foundation-sites": "^6.2.4",
     "handlebars": "^4.0.5",

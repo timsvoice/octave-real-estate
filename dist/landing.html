@@ -5,34 +5,46 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sangha</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text">Sangha Real Estate</li>
-          <li><a href="landing.html">Landing</a></li>
-        </ul>
+    <div class="navigation">
+      <div class="navigation-title">
+        <a href="/landing.html">
+          <img src="../media/pictures/Sangha-Logo.png" alt="Sangha">
+        </a>
       </div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li><input type="search" placeholder="Search"></li>
-          <li><button type="button" class="button">Search</button></li>
-        </ul>
+      <div>
+        <div class="navigation-right">
+          <a id="trigger-overlay" type="button">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
     </div>
 
     <div class="landing-container">
       <div class="landing-description">
-        <h1 class="landing-quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, fugit.</h1>
-        <h3 class="landing-attribution">Lorem ipsum dolor.</h3>
+        <blockquote class="landing-quote cn">
+          手把青秧插满田，低头便见水中天。<br>六根清净方为道，退步原来是向前
+        </blockquote>
+        <h3 class="landing-attribution cn">
+          - 唐.布袋和尚，《水中天》
+        </h3>
       </div>
       <div class="landing-overlay"></div>
     </div>
 
-      <div class="offering-band"></div>
+      <div class="offering-band">
+          <div class="offering-band-intro">
+            <h2 class="offering-band-intro-title cn">
+              半岛印象
+            </h2>
+            <p class="offering-band-intro-body cn">
+              阳澄湖半岛 苏州唯一的国家级旅游度假区，位于苏州工业园区北部、阳澄湖南岸，是园区 最后一块优质版图。区别于金鸡湖商贸中心的定位，阳澄湖立足“精品高端及绿色生态”的发展 定位，绘就“现代化、国际化、园林化新型滨水休闲养生度假胜地”。阳澄湖半岛以其前瞻性的 定位、规划、布局，正在成为苏州园区大力发展的又一极，必将成为苏州园区继金鸡湖之后的 另一块热土。
+            </p>
+          </div>
+      </div>
         <div class="offering-container homes">
           <div class="offering-description">
             <h1 class="offering-title">Sangha Homes</h1>
@@ -43,7 +55,16 @@
           </div>
           <div class="offering-overlay"></div>
       </div>
-      <div class="offering-band"></div>
+      <div class="offering-band">
+        <div class="offering-band-quote">
+          <h5 class="offering-band-quote-body cn">
+            一切有为法，如梦幻泡影。 如露亦如电，应作如是观。
+          </h5>
+          <h5 class="offering-band-quote-attribution cn">
+            《金刚经》
+          </h5>
+        </div>
+      </div>
         <div class="offering-container services">
           <div class="offering-description">
             <h1 class="offering-title">Sangha Services</h1>
@@ -54,7 +75,16 @@
           </div>
           <div class="offering-overlay"></div>
       </div>
-      <div class="offering-band"></div>
+      <div class="offering-band">
+        <div class="offering-band-quote">
+          <h5 class="offering-band-quote-body cn">
+            一切有为法，如梦幻泡影。 如露亦如电，应作如是观。
+          </h5>
+          <h5 class="offering-band-quote-attribution cn">
+            《金刚经》
+          </h5>
+        </div>
+      </div>
         <div class="offering-container explore">
           <div class="offering-description">
             <h1 class="offering-title">Explore More</h1>
@@ -67,9 +97,54 @@
       </div>
 
     <div class="footer">
-      this is footer
+      <ul class="footer-social">
+        <li class="footer-social-item">
+          <i class="fa fa-fw fa-twitter" aria-hidden="true"></i>
+        </li>
+        <li class="footer-social-item">
+          <i class="fa fa-fw fa-facebook" aria-hidden="true"></i>
+        </li>
+        <li class="footer-social-item">
+          <i class="fa fa-fw fa-weixin" aria-hidden="true"></i>
+        </li>
+        <li class="footer-social-item">
+          <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i>
+        </li>
+      </ul>
+      <ul class="footer-links">
+        <li class="footer-link">homes</li>
+        <li class="footer-link">services</li>
+        <li class="footer-link">explore</li>
+        <li class="footer-link">contact</li>
+      </ul>
+      <div class="footer-copywrite">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, atque!
+      </div>
+    </div>
+
+    <div class="overlay overlay-menu">
+      <div class="overlay-title">
+        <a href="/landing.html">
+          <img src="../media/pictures/Sangha-Logo.png" alt="Sangha">
+        </a>
+      </div>
+      <button type="button" class="overlay-close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+      <nav>
+        <ul>
+          <li><h1>Sangha</h1></li>
+          <li><a href="#">Homes</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Exlpore</a></li>
+        </ul>
+      </nav>
     </div>
 
   </body>
+  <script type="text/javascript" src="./js/modernizr.js"></script>
+  <script type="text/javascript" src="./js/classie.js"></script>
+  <script type="text/javascript" src="./js/menu.js"></script>
+  <script src="https://use.fontawesome.com/02ebdbeb2a.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
 </html>

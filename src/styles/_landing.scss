@@ -1,9 +1,40 @@
 .landing-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  background: url('http://d1aptev9i6q1tg.cloudfront.net/media/pictures/misty-mountain.jpg') no-repeat center center fixed;
+  position: relative;
+  background: url('../media/pictures/misty-mountain.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.landing-description {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 75%;
+  text-align: center;
+  color: $primary-color;
+  z-index: 1;
+}
+
+.landing-overlay {
+  display: flex;
+  position: absolute;
+  background: rgba(0,0,0,0.20);
+  left: 0; top: 0; right: 0; bottom: 0;
+}
+
+.landing-quote {
+  @extend h2;
+  margin-bottom: 5rem;
+  font-weight: bold;
+}
+
+.landing-attribution {
+  font-size: 1.25rem;
+  margin: 5rem 0rem;
+  color: $white;
 }

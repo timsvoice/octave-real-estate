@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sangha</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     {{> nav}}
@@ -18,6 +18,29 @@
 
     {{> footer}}
 
+    <div class="overlay overlay-menu">
+      <div class="overlay-title">
+        <a href="/landing.html">
+          <img src="../media/pictures/Sangha-Logo.png" alt="Sangha">
+        </a>
+      </div>
+      <button type="button" class="overlay-close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+      <nav>
+        <ul>
+          <li><h1>Sangha</h1></li>
+          <li><a href="#">Homes</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Exlpore</a></li>
+        </ul>
+      </nav>
+    </div>
+
   </body>
+  <script type="text/javascript" src="./js/modernizr.js"></script>
+  <script type="text/javascript" src="./js/classie.js"></script>
+  <script type="text/javascript" src="./js/menu.js"></script>
+  <script src="https://use.fontawesome.com/02ebdbeb2a.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
 </html>

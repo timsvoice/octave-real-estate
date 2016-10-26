@@ -24,7 +24,7 @@ Metalsmith(__dirname)
     })
   )
   .use(sass({
-    outputDir: './css',
+    outputDir: './styles',
     outputStyle: "expanded",
     includePaths: ["./node_modules/foundation-sites/scss/"]
   }))

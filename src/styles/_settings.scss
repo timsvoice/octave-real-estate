@@ -55,6 +55,7 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #ec5840,
 );
+$gold: #AB8D2A;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -156,9 +157,9 @@ $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
-$blockquote-color: $dark-gray;
-$blockquote-padding: rem-calc(9 20 0 19);
-$blockquote-border: 1px solid $medium-gray;
+$blockquote-color: $primary-color;
+$blockquote-padding: none;
+$blockquote-border: none;
 $cite-font-size: rem-calc(13);
 $cite-color: $dark-gray;
 $keystroke-font: $font-family-monospace;
@@ -566,8 +567,8 @@ $tooltip-radius: $global-radius;
 // 36. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-padding: 1.25rem;
+$topbar-background: transparent;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;

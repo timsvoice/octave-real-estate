@@ -1,0 +1,63 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0rem;
+  &-social {
+    display: flex;
+    @include breakpoint(small) {
+      flex-direction: column;
+    };
+    @include breakpoint(medium) {
+      flex-direction: row;
+    };
+    align-items: center;
+    justify-content: center;
+    &-item {
+      list-style: none;
+      @include breakpoint(small) {
+        margin: 1rem;
+      };
+      @include breakpoint(medium) {
+        margin: 3rem
+      };
+      padding: 1rem;
+      color: $white;
+      border-radius: 50%;
+      background: $primary-color;
+    }
+  }
+  &-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint(small) {
+      flex-direction: column;
+    };
+    @include breakpoint(medium) {
+      flex-direction: row;
+    };
+  }
+  &-link {
+    list-style: none;
+    @include breakpoint(small) {
+      margin: 1rem;
+    };
+    @include breakpoint(medium) {
+      margin: 3rem
+    };
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &-copywrite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: light;
+    color: $medium-gray;
+    text-align: center;
+    @include breakpoint(small) {
+      padding: 0rem 2rem;
+    };
+  }
+}
