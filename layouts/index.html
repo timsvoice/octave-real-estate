@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
+
     {{> nav}}
     {{{contents}}}
 
-    <script>
-      $(document).foundation();
-    </script>
+    <div class="spinner-container">
+      <div class="sk-spinner sk-spinner-pulse"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="./js/modernizr.js"></script>
     <script type="text/javascript" src="./js/classie.js"></script>
     <script type="text/javascript" src="./js/menu.js"></script></script>
+    <script type="text/javascript" src="./js/media.js"></script></script>
     <script src="https://use.fontawesome.com/02ebdbeb2a.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
   </body>

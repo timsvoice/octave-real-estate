@@ -1,5 +1,7 @@
 @import 'settings';
 @import 'foundation';
+@import 'animate';
+@import '5-pulse';
 
 @import 'global';
 @import 'media';
@@ -7,5 +9,6 @@
 @import 'landing';
 @import 'nav';
 @import 'footer';
+@import 'video';
 
 @include foundation-everything($flex: true);

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
+
     <div class="navigation">
       <div class="navigation-title">
         <a href="/landing.html">
@@ -23,17 +24,35 @@
       </div>
     </div>
     
-<video playsinline autoplay muted loop id="bgvid">
-    <source src="http://d1aptev9i6q1tg.cloudfront.net/media/videos/sky-high.mp4" type="video/mp4">
-</video>
+<div class="video-container">
+
+  <video playsinline autoplay muted id="bgvid">
+    <source src="../media/videos/misty-lake.mp4" type="video/mp4">
+  </video>
+
+  <div class="video-cta hidden">
+    <h1>Welcome to <br> Sangha</h1>
+    <div class="button-group">
+      <div class="button play">
+        <i class="fa fa-fw fa-play" aria-hidden="true"></i>
+      </div>
+      <p class="video-cta-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, perferendis.</p>
+    </div>
+    <div class="button">Go to Sangha</div>
+  </div>
+
+</div>
 
 
-    <script>
-      $(document).foundation();
-    </script>
+    <div class="spinner-container">
+      <div class="sk-spinner sk-spinner-pulse"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="./js/modernizr.js"></script>
     <script type="text/javascript" src="./js/classie.js"></script>
     <script type="text/javascript" src="./js/menu.js"></script></script>
+    <script type="text/javascript" src="./js/media.js"></script></script>
     <script src="https://use.fontawesome.com/02ebdbeb2a.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
   </body>
