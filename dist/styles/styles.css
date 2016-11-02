@@ -4084,7 +4084,7 @@ video#bgvid {
   position: relative;
   flex-direction: column;
   color: #fefefe;
-  background: url("http://d1aptev9i6q1tg.cloudfront.net/media/pictures/service-apartment-11.jpg") no-repeat center center fixed;
+  background: url("http://d1aptev9i6q1tg.cloudfront.net/media/pictures/service-apartment-11.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -4116,7 +4116,7 @@ video#bgvid {
   position: relative;
   flex-direction: column;
   color: #fefefe;
-  background: url("http://d1aptev9i6q1tg.cloudfront.net/media/pictures/alvero-hands.jpg") no-repeat center center fixed;
+  background: url("http://d1aptev9i6q1tg.cloudfront.net/media/pictures/alvero-hands.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -4148,7 +4148,7 @@ video#bgvid {
   position: relative;
   flex-direction: column;
   color: #fefefe;
-  background: url("http://d1aptev9i6q1tg.cloudfront.net/media/pictures/overall.jpg") no-repeat center center fixed;
+  background: url("http://d1aptev9i6q1tg.cloudfront.net/media/pictures/overall.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
