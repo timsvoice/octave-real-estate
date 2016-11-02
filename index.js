@@ -43,10 +43,12 @@ const options = {
     '.animated',
     '.fadeOut',
     '.fadeIn',
-    '.close',
-    '.open',
-    '.visibility',
-    '.click'
+    '.overlay-menu.close nav ul',
+    '.overlay-menu.open nav ul',
+    '.overlay-menu nav ul',
+    '.overlay-menu nav',
+    '.overlay-menu.open',
+    '.overlay-menu',
   ]
 }
 
