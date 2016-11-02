@@ -36,7 +36,18 @@ Metalsmith(__dirname)
 
 const files = ['./dist/*.html'];
 const options = {
-  ignore: ['.animated', '.fadeOut', '.fadeIn']
+  // array of css selectors that are added
+  // by javascript/jQuery events. Important
+  // to list as they will be removed otherwise
+  ignore: [
+    '.animated',
+    '.fadeOut',
+    '.fadeIn',
+    '.close',
+    '.open',
+    '.visibility',
+    '.click'
+  ]
 }
 
 uncss(files, options, function (err, res) {
