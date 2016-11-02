@@ -25,11 +25,14 @@
     "metalsmith-serve": "0.0.7",
     "metalsmith-uncss": "^0.2.0",
     "metalsmith-watch": "^1.0.3",
-    "uncss": "^0.14.1"
+    "uncss": "^0.14.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node index.js"
+    "build": "node index.js",
+    "serve": "node index.js && webpack-dev-server --content-base dist"
   },
   "repository": {
     "type": "git",

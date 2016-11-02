@@ -18,19 +18,6 @@ Metalsmith(__dirname)
     'engine': 'handlebars',
     'partials': 'partials',
   }))
-  // used in development for easy work flow
-  .use(serve())
-  .use(
-    watch({
-      paths: {
-        "${source}/**/*": true,
-        "${source}/styles/*": "**/*.scss",
-        "./layouts/**/*": "**/*.html",
-        "./partials/**/*": "**/*.html",
-      },
-      livereload: true,
-    })
-  )
   // vendor-prefix all css files automatically
   .use(prefixer())
   // parse scss files into css files
@@ -47,10 +34,13 @@ Metalsmith(__dirname)
 
 // Remove unused CSS from css files
 
-const files = ['./dist/index.html','./dist/landing.html'];
+const files = ['./dist/*.html'];
+const options = {
+  ignore: ['.animated', '.fadeOut', '.fadeIn']
+}
 
-// uncss(files, function (err, res) {
-//   if (err) throw err;
-//   console.log('Cleaned up CSS');
-//   fs.writeFile('./dist/styles/styles.css', res);
-// })
+uncss(files, options, function (err, res) {
+  if (err) throw err;
+  console.log('Cleaned up CSS');
+  fs.writeFile('./dist/styles/styles.css', res);
+})
