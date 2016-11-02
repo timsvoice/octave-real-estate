@@ -49,8 +49,8 @@ Metalsmith(__dirname)
 
 const files = ['./dist/index.html','./dist/landing.html'];
 
-uncss(files, function (err, res) {
-  if (err) throw err;
-  console.log('Cleaned up CSS');
-  fs.writeFile('./dist/styles/styles.css', res);
-})
+// uncss(files, function (err, res) {
+//   if (err) throw err;
+//   console.log('Cleaned up CSS');
+//   fs.writeFile('./dist/styles/styles.css', res);
+// })
