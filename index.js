@@ -43,6 +43,8 @@ const options = {
     '.animated',
     '.fadeOut',
     '.fadeIn',
+    '.fadeInUp',
+    '.slideInUp',
     '.overlay-menu.close nav ul',
     '.overlay-menu.open nav ul',
     '.overlay-menu nav ul',
@@ -52,8 +54,8 @@ const options = {
   ]
 }
 
-uncss(files, options, function (err, res) {
-  if (err) throw err;
-  console.log('Cleaned up CSS');
-  fs.writeFile('./dist/styles/styles.css', res);
-})
+// uncss(files, options, function (err, res) {
+//   if (err) throw err;
+//   console.log('Cleaned up CSS');
+//   fs.writeFile('./dist/styles/styles.css', res);
+// })
