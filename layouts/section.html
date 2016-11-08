@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sangha</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+
+    {{> nav}}
+
+    {{> splash}}
+
+    <!-- Villas Section -->
+    {{#each data.villas}}
+      {{> villa}}
+    {{/each}}
+
+    <!-- Apartments Section -->
+    {{#each data.apartments}}
+      {{> apartment}}
+    {{/each}}
+
+    <!-- Designers Section -->
+    {{#each data.designers}}
+      {{> designer}}
+    {{/each}}
+
+    <!-- Materials Section -->
+    {{> material}}
+
+    <!-- Partners Section -->
+    {{> partner}}
+
+    {{> menu}}
+
+    {{> footer}}
+
+    {{> spinner}}
+    
+  </body>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://use.fontawesome.com/02ebdbeb2a.js"></script>
+  <script type="text/javascript" src="./js/modernizr.js"></script>
+  <script type="text/javascript" src="./js/classie.js"></script>
+  <script type="text/javascript" src="./js/menu.js"></script>
+  <script type="text/javascript" src="./js/media.js"></script>
+  <script type="text/javascript" src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
