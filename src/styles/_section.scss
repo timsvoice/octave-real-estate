@@ -1,0 +1,234 @@
+// Homes
+.homes {
+  @include splash-landing(
+    '/media/pictures/sangha-villa-24.jpg',
+    90vh
+  );
+  &-overlay {
+    display: none;
+  }
+  &-attribution {
+    margin: 0rem;
+  }
+}
+
+.project-intro {
+  @include standard-image(
+    '/media/pictures/flower_bud.png',
+    30rem
+  );
+}
+
+.landscape {
+  @include standard-image(
+    '/media/pictures/lake_night.jpg',
+    30rem
+  );
+}
+
+// Landscape
+.landscape-banner {
+  @include banner-image(
+    '/media/pictures/site-rendering.jpg',
+    $height: 28rem
+  );
+}
+
+// Villa Intro
+.villas-intro-banner {
+  @include banner-image(
+    '/media/pictures/sangha-villa-1.jpg',
+    $height: 40rem
+  );
+}
+
+.villas-exterior {
+  @include standard-image (
+    '/media/pictures/sangha-villa-exterior-1.jpg',
+    15rem
+  );
+  margin-bottom: 2rem;
+}
+
+.villas-interior {
+  @include standard-image (
+    '/media/pictures/sangha-villa-16.jpg',
+    15rem
+  );
+  margin-bottom: 2rem;
+}
+
+.apartments-interiors {
+  @include standard-image (
+    '/media/pictures/sangha-service-apartments-2.jpg',
+    25rem
+  );
+  // margin-bottom: 2rem;
+}
+
+.designers-calvin-tsao {
+  @include standard-image (
+    '/media/pictures/calvin-tsao.jpg',
+    15rem
+  );
+  margin-bottom: 0rem;
+}
+
+.designers-yung-ho-chang {
+  @include standard-image (
+    '/media/pictures/yung-ho-chang.jpg',
+    15rem
+  );
+  margin-bottom: 0rem;
+}
+
+.designers-neri-and-hu {
+  @include standard-image (
+    '/media/pictures/neri-and-hu.jpg',
+    15rem
+  );
+  margin-bottom: 0rem;
+}
+
+// Materials
+.material {
+  @include standard-image(
+    '/media/pictures/light-fixture.jpg',
+    30rem
+  );
+}
+
+// Villa Intro
+.apartments-intro-banner {
+  @include banner-image(
+    '/media/pictures/sangha-service-apartments-4.jpg',
+    $height: 40rem
+  );
+}
+
+.two-up-stack {
+  &-container {
+    @include flex;
+    @include flex-align($x: center);
+    margin: 1rem 5rem 2rem;
+    @include breakpoint(small only) {
+      flex-direction: column;
+      margin: 1rem;
+    };
+    @include breakpoint(medium only) {
+      margin: 1rem 1rem 2rem;
+    };
+  }
+  &-item {
+    margin: 1rem 4rem;
+    @include breakpoint(small only) {
+      margin: 1rem;
+    };
+    @include breakpoint(medium only) {
+      margin: 1rem 2rem;
+    };
+    &-image {
+    }
+    &-text {
+      text-align: center;
+    }
+  }
+}
+
+.big-banner-stack {
+  @include banner-stack;
+  &-text {
+    margin-bottom: 0rem;
+  }
+  &-container {
+    margin-top: 5rem;
+  }
+}
+
+.banner-stack {
+  @include banner-stack;
+}
+
+.two-block {
+  &-container {
+    @include flex;
+    flex-direction: row;
+    @include breakpoint(large) {
+      padding: 5rem;
+    };
+    @include breakpoint(medium only) {
+      padding: 3rem;
+    };
+    @include breakpoint(small only) {
+      flex-direction: column;
+      padding: 2rem 1rem;
+    };
+  }
+  &-text {
+    @include flex;
+    @include flex-align-self($y: middle);
+    flex-direction: column;
+    padding: 0rem 2rem;
+    width: 50%;
+    @include breakpoint(small only) {
+      width: 100%;
+      padding: 2rem;
+    };
+  }
+  &-title {
+    color: $gold;
+    margin-bottom: 2.5rem;
+  }
+  &-image {
+    padding: 0rem 2rem;
+    img {
+      max-height: 26rem;
+    }
+  }
+}
+
+.three-images {
+  &-title {
+    text-align: center;
+    @include title;
+    margin: 4rem;
+  }
+  &-container {
+    @include flex;
+    flex-direction: row;
+    @include breakpoint(small only) {
+      flex-direction: column;
+    };
+  }
+  &-item {
+    position: relative;
+  }
+  &-image {
+    height: 30rem;
+    @include flex;
+    align-items: flex-end;
+    @include breakpoint(small only){
+      margin: 0rem;
+    };
+    padding: 3rem;
+  }
+  &-text {
+    color: $white;
+    font-weight: 600;
+    z-index: 100;
+  }
+  &-attribution {
+    color: $gold;
+  }
+  &-overlay {
+    transition: background 0.5s ease-in-out;
+    display: flex;
+    position: absolute;
+    background: transparentize($primary-color, 0.5);
+    left: 0; top: 0; right: 0; bottom: 0;
+    &:hover {
+      transition: background 0.5s ease-in-out;
+      background: transparentize($primary-color, 1);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<h2 class="three-images-title">{{ title }}</h2>
+<div class="three-images-container">
+  {{#each images}}
+    <div class="three-images-item">
+      <div class="three-images-image {{ slug }}">
+        <div class="three-images-text">
+          <div class="three-images-quote">{{ quote }}</div>
+          <div class="three-images-attribution">{{ attribution }}</div>
+        </div>
+      </div>
+      <div class="three-images-overlay"></div>
+    </div>
+  {{/each}}
+</div>

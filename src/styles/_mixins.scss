@@ -1,0 +1,107 @@
+@mixin title {
+  color: $gold;
+  margin-bottom: 1rem;
+}
+
+// **
+// Create a splash image for top of page
+// @params {url} $image the url for the background image
+// @params {vh} $height number of vh units for the height of the container
+// **
+
+@mixin splash-landing($image, $height) {
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $height;
+    position: relative;
+    background: url($image) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  &-description {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    text-align: center;
+    color: $primary-color;
+    z-index: 1;
+  }
+  &-overlay {
+    display: flex;
+    position: absolute;
+    background: rgba(0,0,0,0.20);
+    left: 0; top: 0; right: 0; bottom: 0;
+  }
+  &-quote {
+    @extend h2;
+    margin-bottom: 5rem;
+    font-weight: bold;
+  }
+  &-attribution {
+    font-size: 1.25rem;
+    margin: 5rem 0rem;
+    color: $white;
+  }
+}
+
+// **
+// Create a banner image
+// @params {url} $image the url for the background image
+// **
+
+@mixin banner-image($image, $height) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $height;
+  position: relative;
+  background: url($image) no-repeat center center;
+  @include breakpoint(medium up) {
+    background-attachment: fixed;
+  };
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+@mixin banner-stack {
+  &-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &-text {
+    width: 30rem;
+    text-align: center;
+    margin: 4rem 0rem;
+  }
+  &-title {
+    @include title;
+  }
+  &-image {
+    img {
+      max-height: 25rem;
+    }
+  }
+}
+
+@mixin standard-image ($image, $height) {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  height: $height;
+  position: relative;
+  background: url($image) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
