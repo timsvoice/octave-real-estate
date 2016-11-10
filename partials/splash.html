@@ -1,11 +1,18 @@
 <div class="{{ context }}-container">
-  <div class="{{ context }}-description">
-    <blockquote class="{{ context }}-quote cn">
-      手把青秧插满田，低头便见水中天。<br>六根清净方为道，退步原来是向前
-    </blockquote>
-    <h3 class="{{ context }}-attribution cn">
-      - 唐.布袋和尚，《水中天》
-    </h3>
-  </div>
+
+  {{#if splash}}
+    <div class="{{ context }}-description">
+      <blockquote class="{{ context }}-quote cn">
+        {{ splash.quote }}
+      </blockquote>
+      <h3 class="{{ context }}-attribution cn">
+        {{ splash.attribution }}
+      </h3>
+    </div>
+  {{/ if}}
+
   <div class="{{ context }}-overlay"></div>
 </div>
+{{#if arrow}}
+  <i class="fa fa-angle-down nav-arrow" aria-hidden="true"></i>
+{{/if}}

@@ -11,25 +11,53 @@
 
     {{> nav}}
 
-    {{> splash}}
+    {{> splash context='homes' arrow=true }}
 
-    <!-- Villas Section -->
-    {{#each data.villas}}
-      {{> villa}}
-    {{/each}}
+    {{> two.block
+        text=intro
+        slug=intro.slug
+    }}
 
-    <!-- Apartments Section -->
-    {{#each data.apartments}}
-      {{> apartment}}
-    {{/each}}
+    <!-- Lanscape Section -->
+    {{> banner.stack
+        context=landscape.slug
+        text=landscape
+        image=landscape.image
+    }}
+
+    <!-- Villas Intro Section -->
+    {{> big.banner.stack
+        context=data.villas.intro.slug
+        text=data.villas.intro.content
+    }}
+
+    <!-- Villas Architecture and Interiors Section -->
+    {{> two.up.stack
+        items=data.villas.architecture
+    }}
+
+    <!-- Apartments Intro Section -->
+    {{> big.banner.stack
+        context=data.apartments.intro.slug
+        text=data.apartments.intro.content
+    }}
+
+    {{> two.block
+        text=data.apartments.interiors.content
+        slug=data.apartments.interiors.slug
+    }}
 
     <!-- Designers Section -->
-    {{#each data.designers}}
-      {{> designer}}
-    {{/each}}
+    {{> three.images
+        title=data.designers.title
+        images=data.designers.data
+    }}
 
     <!-- Materials Section -->
-    {{> material}}
+    {{> two.block
+        text=data.material
+        slug=data.material.slug
+    }}
 
     <!-- Partners Section -->
     {{> partner}}
@@ -39,7 +67,7 @@
     {{> footer}}
 
     {{> spinner}}
-    
+
   </body>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script src="https://use.fontawesome.com/02ebdbeb2a.js"></script>

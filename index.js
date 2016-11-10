@@ -26,6 +26,15 @@ Metalsmith(__dirname)
     outputStyle: "expanded",
     includePaths: ["./node_modules/foundation-sites/scss/", "./node_modules/spinkit/scss/spinners/"]
   }))
+  .use(watch({
+    paths: {
+      "${source}/**/*": true,
+      "src/styles/**/*": "**/*",
+      "partials/**/*": "**/*",
+      "layouts/**/*": "**/*"
+    },
+    livereload: true
+  }))
   .source('./src')
   .destination('./dist')
   .build(function(err, files) {

@@ -10,6 +10,20 @@ body {
   display: none;
 }
 
+.text-title {
+  @include title;
+  font-weight: 600;
+}
+
+i.nav-arrow {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem 1rem;
+  color: $gold;
+  display: flex;
+  justify-content: center;
+}
+
 @font-face {
   font-family: 'Graphik';
   src:  url('/fonts/Graphik-Regular.woff') format('woff'),

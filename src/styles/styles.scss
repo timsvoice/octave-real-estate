@@ -4,10 +4,12 @@
 @import '5-pulse';
 @import 'aos';
 
+@import "mixins";
 @import 'global';
 @import 'media';
 @import 'offering';
 @import 'landing';
+@import 'section';
 @import 'nav';
 @import 'footer';
 @import 'video';

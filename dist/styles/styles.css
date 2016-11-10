@@ -4038,6 +4038,21 @@ body {
   display: none;
 }
 
+.text-title {
+  color: #AB8D2A;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+i.nav-arrow {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem 1rem;
+  color: #AB8D2A;
+  display: flex;
+  justify-content: center;
+}
+
 @font-face {
   font-family: 'Graphik';
   src: url("/fonts/Graphik-Regular.woff") format("woff"), url("/fonts/Graphik-Regular.woff2") format("woff2"), url("/fonts/Graphik-Bold.woff") format("woff"), url("/fonts/Graphik-Bold.woff2") format("woff2") url("/fonts/Graphik-Light.woff") format("woff"), url("/fonts/Graphik-Light.woff2") format("woff2"), url("/fonts/NotoSans.woff") format("woff"), url("/fonts/NotoSans-Regulsr.woff2") format("woff2"), url("/fonts/NotoSans-Bold.woff") format("woff"), url("/fonts/NotoSans-Bold.woff2") format("woff2"), url("/fonts/font-awesome.woff2") format("woff2"), url("/fonts/font-awesome.woff2") format("woff");
@@ -4285,6 +4300,9 @@ video#bgvid {
   height: 100vh;
   position: relative;
   background: url("http://d1aptev9i6q1tg.cloudfront.net/media/pictures/misty-mountain.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -4316,6 +4334,459 @@ video#bgvid {
   font-size: 1.25rem;
   margin: 5rem 0rem;
   color: #fefefe;
+}
+
+.homes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  position: relative;
+  background: url("/media/pictures/sangha-villa-24.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.homes-description {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 75%;
+  text-align: center;
+  color: #3F2A2E;
+  z-index: 1;
+}
+
+.homes-overlay {
+  display: flex;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.homes-quote {
+  margin-bottom: 5rem;
+  font-weight: bold;
+}
+
+.homes-attribution {
+  font-size: 1.25rem;
+  margin: 5rem 0rem;
+  color: #fefefe;
+}
+
+.homes-overlay {
+  display: none;
+}
+
+.homes-attribution {
+  margin: 0rem;
+}
+
+.project-intro {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  position: relative;
+  background: url("/media/pictures/flower_bud.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+.landscape {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  position: relative;
+  background: url("/media/pictures/lake_night.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+.landscape-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28rem;
+  position: relative;
+  background: url("/media/pictures/site-rendering.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .landscape-banner {
+    background-attachment: fixed;
+  }
+}
+
+.villas-intro-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+  position: relative;
+  background: url("/media/pictures/sangha-villa-1.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .villas-intro-banner {
+    background-attachment: fixed;
+  }
+}
+
+.villas-exterior {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  position: relative;
+  background: url("/media/pictures/sangha-villa-exterior-1.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.villas-interior {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  position: relative;
+  background: url("/media/pictures/sangha-villa-16.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.apartments-interiors {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+  position: relative;
+  background: url("/media/pictures/sangha-service-apartments-2.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+.designers-calvin-tsao {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  position: relative;
+  background: url("/media/pictures/calvin-tsao.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 0rem;
+}
+
+.designers-yung-ho-chang {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  position: relative;
+  background: url("/media/pictures/yung-ho-chang.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 0rem;
+}
+
+.designers-neri-and-hu {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  position: relative;
+  background: url("/media/pictures/neri-and-hu.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 0rem;
+}
+
+.material {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  position: relative;
+  background: url("/media/pictures/light-fixture.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+.apartments-intro-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+  position: relative;
+  background: url("/media/pictures/sangha-service-apartments-4.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .apartments-intro-banner {
+    background-attachment: fixed;
+  }
+}
+
+.two-up-stack-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 5rem 2rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .two-up-stack-container {
+    flex-direction: column;
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .two-up-stack-container {
+    margin: 1rem 1rem 2rem;
+  }
+}
+
+.two-up-stack-item {
+  margin: 1rem 4rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .two-up-stack-item {
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .two-up-stack-item {
+    margin: 1rem 2rem;
+  }
+}
+
+.two-up-stack-item-text {
+  text-align: center;
+}
+
+.big-banner-stack-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.big-banner-stack-text {
+  width: 30rem;
+  text-align: center;
+  margin: 4rem 0rem;
+}
+
+.big-banner-stack-title {
+  color: #AB8D2A;
+  margin-bottom: 1rem;
+}
+
+.big-banner-stack-image img {
+  max-height: 25rem;
+}
+
+.big-banner-stack-text {
+  margin-bottom: 0rem;
+}
+
+.big-banner-stack-container {
+  margin-top: 5rem;
+}
+
+.banner-stack-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner-stack-text {
+  width: 30rem;
+  text-align: center;
+  margin: 4rem 0rem;
+}
+
+.banner-stack-title {
+  color: #AB8D2A;
+  margin-bottom: 1rem;
+}
+
+.banner-stack-image img {
+  max-height: 25rem;
+}
+
+.two-block-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 64em) {
+  .two-block-container {
+    padding: 5rem;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .two-block-container {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .two-block-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+}
+
+.two-block-text {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  padding: 0rem 2rem;
+  width: 50%;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .two-block-text {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+.two-block-title {
+  color: #AB8D2A;
+  margin-bottom: 2.5rem;
+}
+
+.two-block-image {
+  padding: 0rem 2rem;
+}
+
+.two-block-image img {
+  max-height: 26rem;
+}
+
+.three-images-title {
+  text-align: center;
+  color: #AB8D2A;
+  margin-bottom: 1rem;
+  margin: 4rem;
+}
+
+.three-images-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .three-images-container {
+    flex-direction: column;
+  }
+}
+
+.three-images-item {
+  position: relative;
+}
+
+.three-images-image {
+  height: 30rem;
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .three-images-image {
+    margin: 0rem;
+  }
+}
+
+.three-images-text {
+  color: #fefefe;
+  font-weight: 600;
+  z-index: 100;
+}
+
+.three-images-attribution {
+  color: #AB8D2A;
+}
+
+.three-images-overlay {
+  transition: background 0.5s ease-in-out;
+  display: flex;
+  position: absolute;
+  background: rgba(63, 42, 46, 0.5);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.three-images-overlay:hover {
+  transition: background 0.5s ease-in-out;
+  background: rgba(63, 42, 46, 0);
 }
 
 .navigation {
@@ -4996,7 +5467,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Graphik", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1.5;
   color: #0a0a0a;
   background: #fefefe;
@@ -5740,6 +6211,7 @@ li,
 h1,
 h2,
 .landing-quote,
+.homes-quote,
 .overlay ul li,
 h3,
 h4,
@@ -5782,6 +6254,7 @@ small {
 h1,
 h2,
 .landing-quote,
+.homes-quote,
 .overlay ul li,
 h3,
 h4,
@@ -5798,7 +6271,7 @@ h6 {
 }
 
 h1 small,
-h2 small, .landing-quote small, .overlay ul li small,
+h2 small, .landing-quote small, .homes-quote small, .overlay ul li small,
 h3 small,
 h4 small,
 h5 small,
@@ -5811,7 +6284,7 @@ h1 {
   font-size: 1.5rem;
 }
 
-h2, .landing-quote, .overlay ul li {
+h2, .landing-quote, .homes-quote, .overlay ul li {
   font-size: 1.25rem;
 }
 
@@ -5835,7 +6308,7 @@ h6 {
   h1 {
     font-size: 3rem;
   }
-  h2, .landing-quote, .overlay ul li {
+  h2, .landing-quote, .homes-quote, .overlay ul li {
     font-size: 2.5rem;
   }
   h3 {
@@ -5942,7 +6415,7 @@ abbr {
 
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: normal;
+  font-weight: 300;
   color: #0a0a0a;
   background-color: #e6e6e6;
   border: 1px solid #cacaca;
@@ -5961,7 +6434,7 @@ kbd {
 .subheader {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1.4;
   color: #8a8a8a;
 }
@@ -6102,12 +6575,13 @@ p + .stat {
   p,
   h2,
   .landing-quote,
+  .homes-quote,
   .overlay ul li,
   h3 {
     orphans: 3;
     widows: 3;
   }
-  h2, .landing-quote, .overlay ul li,
+  h2, .landing-quote, .homes-quote, .overlay ul li,
   h3 {
     page-break-after: avoid;
   }
@@ -6206,7 +6680,7 @@ label {
   display: block;
   margin: 0;
   font-size: 0.875rem;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1.8;
   color: #0a0a0a;
 }
