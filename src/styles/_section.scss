@@ -1,7 +1,7 @@
 // Homes
 .homes {
   @include splash-landing(
-    '/media/pictures/sangha-villa-24.jpg',
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/sangha-villa-24.jpg',
     90vh
   );
   &-overlay {
@@ -14,14 +14,14 @@
 
 .project-intro {
   @include standard-image(
-    '/media/pictures/flower_bud.png',
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/flower_bud.png',
     30rem
   );
 }
 
 .landscape {
   @include standard-image(
-    '/media/pictures/lake_night.jpg',
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/lake_night.jpg',
     30rem
   );
 }
@@ -29,7 +29,7 @@
 // Landscape
 .landscape-banner {
   @include banner-image(
-    '/media/pictures/site-rendering.jpg',
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/site-rendering.jpg',
     $height: 28rem
   );
 }
@@ -37,14 +37,14 @@
 // Villa Intro
 .villas-intro-banner {
   @include banner-image(
-    '/media/pictures/sangha-villa-1.jpg',
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/sangha-villa-1.jpg',
     $height: 40rem
   );
 }
 
 .villas-exterior {
   @include standard-image (
-    '/media/pictures/sangha-villa-exterior-1.jpg',
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/sangha-villa-exterior-1.jpg',
     15rem
   );
   margin-bottom: 2rem;
@@ -52,7 +52,7 @@
 
 .villas-interior {
   @include standard-image (
-    '/media/pictures/sangha-villa-16.jpg',
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/sangha-villa-16.jpg',
     15rem
   );
   margin-bottom: 2rem;
@@ -60,7 +60,7 @@
 
 .apartments-interiors {
   @include standard-image (
-    '/media/pictures/sangha-service-apartments-2.jpg',
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/sangha-service-apartments-2.jpg',
     25rem
   );
   // margin-bottom: 2rem;
@@ -68,7 +68,7 @@
 
 .designers-calvin-tsao {
   @include standard-image (
-    '/media/pictures/calvin-tsao.jpg',
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/calvin-tsao.jpg',
     15rem
   );
   margin-bottom: 0rem;
@@ -76,7 +76,7 @@
 
 .designers-yung-ho-chang {
   @include standard-image (
-    '/media/pictures/yung-ho-chang.jpg',
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/yung-ho-chang.jpg',
     15rem
   );
   margin-bottom: 0rem;
@@ -84,7 +84,7 @@
 
 .designers-neri-and-hu {
   @include standard-image (
-    '/media/pictures/neri-and-hu.jpg',
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/neri-and-hu.jpg',
     15rem
   );
   margin-bottom: 0rem;
@@ -93,7 +93,7 @@
 // Materials
 .material {
   @include standard-image(
-    '/media/pictures/light-fixture.jpg',
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/light-fixture.jpg',
     30rem
   );
 }
@@ -101,7 +101,7 @@
 // Villa Intro
 .apartments-intro-banner {
   @include banner-image(
-    '/media/pictures/sangha-service-apartments-4.jpg',
+    'http://d1aptev9i6q1tg.cloudfront.net/media/pictures/sangha-service-apartments-4.jpg',
     $height: 40rem
   );
 }
